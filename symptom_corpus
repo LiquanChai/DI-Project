@@ -1,0 +1,41 @@
+Meta:: 0, start_symptom_intent, symptom_corpus
+Y:: describe symptom
+A:: Have a seat. What seems to be the trouble?
+C:: You could say:\nIt's my (stomach). It (hurts badly).
+Context:: Suppose you have a stomach ache and are going to see a doctor.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/doctor.png
+
+Meta:: 1, second_symptom_intent, symptom_corpus
+Y:: It's my stomach. It hurts badly.
+A:: Have you changed your eating habits recently?
+C:: You could say:\nI had (too much) (dinner) (last night).
+Context:: The doctor is asking for anything that you feel abnormal.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/doctor.png
+
+Meta:: 2, third_symptom_intent, symptom_corpus
+Y:: I had too much dinner last night.
+A:: Could you tell me what you had for dinner last night?
+C:: You could say:\nSome (seafood), (roast duck), (pizza), and some (beer).
+Context:: Describe what you have eaten last night.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/doctor.png
+
+Meta:: 3, fourth_symptom_intent, symptom_corpus
+Y:: Some seafood, roast duck, pizza, and some beer.
+A:: That's quite a lot. Did you vomit?
+C:: You could say:\n(Yes), and I (made several trips) to the (bathroom) (last night).
+Context:: The doctor want to know about the severity of the symptom.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/doctor.png
+
+Meta:: 4, fifth_symptom_intent, symptom_corpus
+Y:: Yes, and I made several trips to the bathroom last night.
+A:: I see. You'll have your stools tested and bring the report back to me after the test.
+C:: You could say:\n(Alright). I'll (be back) in (a minuate).
+Context:: The doctor ask for you to go to the laboratory for stool analysis
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/doctor.png
+
+Meta:: 5, sixth_symptom_intent, symptom_corpus
+Y:: Alright. I'll be back in a minute.
+A:: Take your time. See you soon.
+C:: This is the end of the conversation.
+Context:: You go to the laboratory.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/doctor.png

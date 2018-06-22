@@ -1,0 +1,62 @@
+Meta:: 0, first_restaurant_intent, restaurant_corpus
+Y:: Order food
+A:: May I take your order now?
+C:: You could say:\n(Yes). Could you (tell) me (what) the (soup of the day) is?
+Context:: Suppose you are in a restaurant and you are ready to order. You may start the conversation about choosing the soup.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/waiter.jpg
+
+Meta:: 1, second_restaurant_intent, restaurant_corpus
+Y:: Could you tell me what the soup of the day is?
+A:: Chicken noodle soup. Would you like to try it?
+C:: You could say:\n(Yes), please. I (also) want a (green salad) for an (appetizer).
+Context:: The second step is to choose an appetizer. Saland may be a great choice. 
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/chicken_noolde_soup.png
+
+Meta:: 2, third_restaurant_intent, restaurant_corpus
+Y:: I also want a green salad for an appetizer.
+A:: OK. What dressing would you like?
+C:: You could say:\nMake it (thousand island). (What) do you (recommend) for (the main course)?
+Context:: The third step is to choose the main course.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/saland.png
+
+Meta:: 3, fourth_restaurant_intent, restaurant_corpus
+Y:: What do you recommend for the main course?
+A:: I recommand the New York strip steak. It's our restaurant's specialty. Or you could have the rib-eye steak. Many customers like it.
+C:: You could say:\n(I'll have) the strip/rib-eye (steak) (with chips), (please).
+Context:: When you order the main course, do not forget to mention the side you want.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/ny_steak.png
+
+Meta:: 4, fifth_restaurant_intent, restaurant_corpus
+Y:: I'll have the strip/rib-eye steak with chips please.
+A:: OK. How would you like your {}?
+C:: You could say:\n(I'd) (like) it (medium) rare/medium/medium well/well done.
+Context:: For steak, medium rare-3, medium-5, medium well-7, well done-10.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/ribeye_steak.png
+
+Meta:: 5, sixth_restaurant_intent, restaurant_corpus
+Y:: I'd like it medium rare/medium/medium well/well done.
+A:: Alright. Anything for dessert?
+C:: You could say:\n(I'd) (like) to (have) the (vanilla) (ice cream).
+Context:: Dessert is always the last thing to order.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/icecream.png
+
+Meta:: 6, seventh_restaurant_intent, restaurant_corpus
+Y:: I'd like to have the vanilla ice cream.
+A:: Would you like anything to drink?
+C:: You could say:\n(Just) (water), please.
+Context:: For drink, you could order soft drinks, wines, or simplely water.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/water.png
+
+Meta:: 7, eighth_restaurant_intent, restaurant_corpus
+Y:: Just water, please.
+A:: Okay. So that's one chicken noodle soup, one green salad with thousand island sauce, one {} with chips, one vanilla ice cream and a glass of water. Is there anything else I can do for you?
+C:: You could say:\n(No), (thank you).
+Context:: The final step is to comfirm your order.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/waiter.jpg
+
+Meta:: 8, ninth_restaurant_intent, restaurant_corpus
+Y:: No, thank you.
+A:: Okay.
+C:: This is the end of the conversation.
+Context:: The waiter goes away.
+Img_url:: https://s3.eu-west-2.amazonaws.com/echo.learn.image.bucket/waiter.jpg
